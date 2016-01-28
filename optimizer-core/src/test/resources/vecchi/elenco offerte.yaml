@@ -1,0 +1,212 @@
+---
+tosca_definitions_version: tosca_simple_yaml_1_0
+node_templates: 
+
+[AWS.compute.c1.medium, AWS.compute.m1.medium, AWS.compute.m1.small,
+          AWS.compute.m1.large, AWS.compute.t1.micro, AWS.compute.t2.small, Rackspace.compute.1gb, Rackspace.compute.compute1-15,
+          HP.compute.standard.xsmall, HP.compute.standard.small, HP.compute.standard.medium, HP.compute.standard.large,  HP.compute.standard.xlarge,
+          HP.compute.standard.2xlarge]
+
+
+
+
+
+[AWS.compute.c1.medium, AWS.compute.c2.medium, AWS.compute.m1.medium, AWS.compute.m1.small,
+          AWS.compute.m1.large, AWS.compute.t1.micro, AWS.compute.t2.small, AWS.compute.c3.large, AWS.compute.c3.xlarge,
+          AWS.compute.c4.large, AWS.compute.c4.xlarge, Rackspace.compute.1gb, Rackspace.compute.compute1-15,
+          HP.compute.standard.xsmall, HP.compute.standard.small, HP.compute.standard.xlarge,
+          HP.compute.standard.2xlarge]
+
+[AWS.compute.t2.micro, AWS.compute.m2.small, AWS.compute.m2.medium,
+        AWS.compute.t2.medium, AWS.compute.m2.large, AWS.compute.t2.large, AWS.compute.i2.xlarge,
+        Rackspace.compute.2gb, Rackspace.compute.compute1-20,
+        HP.compute.standard.xxsmall, HP.compute.standard.large]
+
+############## AWS ###########################
+
+  AWS.compute.c1.medium:
+    type: seaclouds.nodes.Compute
+        performancePOC: 62.0
+        availabilityPOC: 0.99569
+        costPOC: 0.125
+
+  AWS.compute.c2.medium:
+    type: seaclouds.nodes.Compute
+        performancePOC: 70.0
+        availabilityPOC: 0.9956
+        costPOC: 0.13
+
+  AWS.compute.m1.small:
+    type: seaclouds.nodes.Compute
+        performancePOC: 42.0
+        availabilityPOC: 0.9954
+        costPOC: 0.085
+
+  AWS.compute.m2.small:
+    type: seaclouds.nodes.Platform
+        performancePOC: 44.0
+        availabilityPOC: 0.99548
+        costPOC: 0.09
+
+  AWS.compute.m1.medium:
+    type: seaclouds.nodes.Compute
+        performancePOC: 67.0
+        availabilityPOC: 0.99562
+        costPOC: 0.138
+
+  AWS.compute.m2.medium:
+    type: seaclouds.nodes.Platform
+        performancePOC: 72.5
+        availabilityPOC: 0.9957
+        costPOC: 0.145
+
+  AWS.compute.m1.large:
+    type: seaclouds.nodes.Compute
+        performancePOC: 88.0
+        availabilityPOC: 0.9959
+        costPOC: 0.185
+
+  AWS.compute.m2.large:
+    type: seaclouds.nodes.Platform
+        performancePOC: 94.0
+        availabilityPOC: 0.99595
+        costPOC: 0.192
+
+  AWS.compute.t1.micro:
+    type: seaclouds.nodes.Compute
+        performancePOC: 17
+        availabilityPOC: 0.99522
+        costPOC: 0.048
+
+  AWS.compute.t2.micro:
+    type: seaclouds.nodes.Platform
+        performancePOC: 21
+        availabilityPOC: 0.99524
+        costPOC: 0.05
+
+  AWS.compute.t1.small:
+    type: seaclouds.nodes.Compute
+        performancePOC: 35.0
+        availabilityPOC: 0.9955
+        costPOC: 0.082
+
+  AWS.compute.t2.small:
+    type: seaclouds.nodes.Compute
+        performancePOC: 43.0
+        availabilityPOC: 0.99544
+        costPOC: 0.094
+
+  AWS.compute.c3.large:
+    type: seaclouds.nodes.Compute
+        performancePOC: 86.0
+        availabilityPOC: 0.99589
+        costPOC: 0.17
+
+  AWS.compute.c3.xlarge:
+    type: seaclouds.nodes.Compute
+        performancePOC: 113.0
+        availabilityPOC: 0.9962
+        costPOC: 0.225
+
+  AWS.compute.c4.large:
+    type: seaclouds.nodes.Compute
+        performancePOC: 98.0
+        availabilityPOC: 0.99589
+        costPOC: 0.2
+
+  AWS.compute.c4.xlarge:
+    type: seaclouds.nodes.Compute
+        performancePOC: 118.0
+        availabilityPOC: 0.99618
+        costPOC: 0.24
+
+  AWS.compute.i2.xlarge:
+    type: seaclouds.nodes.Platform
+        performancePOC: 138.0
+        availabilityPOC: 0.9965
+        costPOC: 0.3
+
+  AWS.compute.t2.medium:
+    type: seaclouds.nodes.Platform
+        performancePOC: 69.0
+        availabilityPOC: 0.99562
+        costPOC: 0.133
+
+  AWS.compute.t2.large:
+    type: seaclouds.nodes.Platform
+        performancePOC: 91.0
+        availabilityPOC: 0.9958
+        costPOC: 0.195
+
+############## RACKSPACE ###########################        
+
+  Rackspace.compute.1gb:
+    type: seaclouds.nodes.Compute
+        performancePOC: 20.0
+        availabilityPOC: 0.9981795
+        costPOC: 0.022
+
+  Rackspace.compute.2gb:
+    type: seaclouds.nodes.Platform
+        performancePOC: 35.0
+        availabilityPOC: 0.9982869
+        costPOC: 0.029
+
+  Rackspace.compute.compute1-15:
+    type: seaclouds.nodes.Compute
+        performancePOC: 118.0
+        availabilityPOC: 0.9962
+        costPOC: 0.238
+
+  Rackspace.compute.compute1-20:
+    type: seaclouds.nodes.Platform
+        performancePOC: 140.0
+        availabilityPOC: 0.99645
+        costPOC: 0.289
+
+############## HP HELION ###########################
+
+  HP.compute.standard.xxsmall:
+    type: seaclouds.nodes.Platform
+        performancePOC: 11.0
+        availabilityPOC: 0.9951
+        costPOC: 0.019
+
+  HP.compute.standard.xsmall:
+    type: seaclouds.nodes.Compute
+        performancePOC: 18.0
+        availabilityPOC: 0.99524
+        costPOC: 0.038
+
+  HP.compute.standard.small:
+    type: seaclouds.nodes.Compute
+        performancePOC: 44.0
+        availabilityPOC: 0.9955
+        costPOC: 0.075
+
+  HP.compute.standard.medium:
+    type: seaclouds.nodes.Platform
+        performancePOC:  70.0
+        availabilityPOC: 0.99561
+        costPOC: 0.13
+
+  HP.compute.standard.large:
+    type: seaclouds.nodes.Platform
+        performancePOC:  92.0
+        availabilityPOC: 0.996
+        costPOC: 0.18
+
+  HP.compute.standard.xlarge:
+    type: seaclouds.nodes.Compute
+        performancePOC:  124.0
+        availabilityPOC: 0.9961
+        costPOC: 0.246
+
+  HP.compute.standard.2xlarge:
+    type: seaclouds.nodes.Compute
+        performancePOC:  150.0
+        availabilityPOC: 0.99648
+        costPOC: 0.31
+
+  latencyExternalPOC: 100.0
+  latencyInternalPOC: 20.0
