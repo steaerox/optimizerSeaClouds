@@ -11,8 +11,7 @@ Before starting import there are few things to know:
 Secondly
 In order to visualize some Class-Activity Diagram install:
 - AmaterasUML (i.e. sqd extension file)
-or
--ObjectAid UML Diagram (i.e. ucls extension file)
+- ObjectAid UML Diagram (i.e. ucls extension file)
 
 To have a working project please link the "optimizer-core/src/main/resources/jmetal4.5.src" source folder at your Java Build Path of your project.
 Some classes from the original source are a little bit modified.
